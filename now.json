@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "alias": "accesible-lx.shahid.com.au",
+    "alias": ["accesible-lx.shahid.com.au"],
     "github": {
         "autoAlias": false
     }
