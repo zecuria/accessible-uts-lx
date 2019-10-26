@@ -27,7 +27,23 @@ const navData = [
         label: "Events" 
     }, {
         href: "https://lx.uts.edu.au/programs/",
-        label: "Programs" 
+        label: "Programs",
+        subItems: [
+            {
+                href: "httsp://lx.uts.edu.au/programs/",
+                label: "All programs",
+            }, {
+                href: "httsp://lx.uts.edu.au/programs/postgraduate-futures/",
+                label: "Postgraduate futures",
+            }, {
+                href: "httsp://lx.uts.edu.au/programs/lx-transformation/",
+                label: "LX Transformation",
+            }, {
+                href: "httsp://lx.uts.edu.au/programs/academic-in-residence/",
+                label: "Academic in Residence",
+            }
+            
+        ]
     }, {
         href: "https://lx.uts.edu.au/?option=saml_user_login",
         label: "Log In" 

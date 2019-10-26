@@ -21,7 +21,7 @@ const focusLink = (linksRef, i) => {
 
 let linkRefs = []; 
 const initLinks = (items) => {
-    if(linkRefs.length === 0) {
+    if(linkRefs.length === 0 || items.length !== linkRefs.length) {
         linkRefs = items.map(() => React.createRef());
     }
 }
