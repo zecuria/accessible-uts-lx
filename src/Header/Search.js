@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import ReactModal from 'react-modal';
 
 import './Search.css'
@@ -11,9 +11,10 @@ const getParent = () => document.getElementById('root');
 
 const Search = () => {
     const [isOpen, toggleOpen] = useState(false);
+    const inputRef = useRef(null);
 
     return (
-        <div role="search">
+        <div>
             <button onClick={() => toggleOpen(true)}>
                 <SearchLogo />
                 <span className="sr-only">Open search</span>
@@ -24,11 +25,12 @@ const Search = () => {
                 onRequestClose={() => toggleOpen(false)}
                 contentLabel="Search for content"
                 parentSelector={getParent}
+                appElement={document.getElementById('root')}
                 className="search-popup-wrap"
                 overlayClassName="search-popup"
             >
                 <form role="search" action="https://lx.uts.edu.au">
-                    <input type="search" placeholder="Search..."/>
+                    <input ref={inputRef} type="search" placeholder="Search..."/>
                 </form>
                 <button className="search-close" onClick={() => toggleOpen(false)}>
                     <span className="sr-only">Close search</span>

@@ -55,3 +55,8 @@ img {
     background: none;
     border: 0;
 }
+
+.header-bottom {
+    padding-top: 100px;
+    background: #000000;
+}

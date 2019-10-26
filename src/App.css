@@ -19,3 +19,16 @@ button:focus {
 button:hover {
   cursor: pointer;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  transition: opacity .3s ease, background .3s ease, border .3s ease, color .3s ease;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  outline: none;
+}
