@@ -1,0 +1,9 @@
+.play-button {
+    appearance: none;
+    width: 60px;
+    height: 60px;
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+}

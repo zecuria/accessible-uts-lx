@@ -1,0 +1,80 @@
+section {
+    display: block;
+}
+
+.banner.video-banner {
+    background-image: none !important;
+}
+
+.banner .video-wrap {
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+}
+
+.banner {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner .video-wrap video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.banner .video-wrap video {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.banner h1 {
+    font-size: 130px;
+    margin: 0 0 10px;
+    padding-right: 140px;
+    font-weight: 300;
+}
+
+.banner .sub-heading {
+    font-size: 24px;
+    display: block;
+    text-align: right;
+}
+
+.banner.video-banner .container {
+    padding: 0;
+    display: flex;
+}
+
+.banner.video-banner .banner-text {
+    margin: auto;
+}
+.banner.video-banner .container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: center;
+}
+
+.banner.video-banner .play-button {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}

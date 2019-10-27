@@ -51,7 +51,7 @@ const MenuItem = (props) => {
 
     const isMenu = subItems && subItems.length > 0;
 
-    const onKeyUp = (e, i) => {
+    const onKeyDown = (e, i) => {
         let isStopped = false;
         if (e.keyCode === keyCode.RIGHT) {
             isStopped = true;
@@ -69,7 +69,6 @@ const MenuItem = (props) => {
                 if (e.target === linkRef.current && !isOpen) {
                     toggleOpen(true);
                     focusedIndex = 0;
-                    // focusLink(linkRefs, 0);
                 } else {
                     focusLink(linkRefs, i+1)
                 }
@@ -85,6 +84,7 @@ const MenuItem = (props) => {
                     isStopped = true;
                     focusLink(linkRefs, i-1);
                 } else if (isOpen) {
+                    isStopped = true;
                     focusLink(linkRefs, linkRefs.length - 1);
                 }
             }
@@ -99,6 +99,7 @@ const MenuItem = (props) => {
         if (isStopped) {
             e.preventDefault();
             e.stopPropagation();
+            return false;
         }
         
     };
@@ -116,7 +117,7 @@ const MenuItem = (props) => {
         <li role="none">
             <a
                 href={href}
-                onKeyUp={(e) => onKeyUp(e, linkRefs.length)}
+                onKeyDown={(e) => onKeyDown(e, linkRefs.length)}
                 ref={linkRef}
                 aria-expanded={isMenu ? String(isOpen): undefined}
                 aria-haspopup={isMenu ? "true" : undefined}
@@ -126,14 +127,14 @@ const MenuItem = (props) => {
             </a>
             {isMenu && 
                 <ul className={`sub-menu ${className}`} role="menu">
-                    <SubItems subItems={subItems} linkRefs={linkRefs} onKeyUp={onKeyUp} onBlur={onBlur} />
+                    <SubItems subItems={subItems} linkRefs={linkRefs} onKeyDown={onKeyDown} onBlur={onBlur} />
                 </ul>
             }
         </li>
     );
 }
 
-const SubItems = ({ subItems, linkRefs, onBlur, onKeyUp }) => (
+const SubItems = ({ subItems, linkRefs, onBlur, onKeyDown }) => (
     subItems.map(
         ({href, label}, i) => (
         <li role="none" key={href}>
@@ -141,7 +142,7 @@ const SubItems = ({ subItems, linkRefs, onBlur, onKeyUp }) => (
                 role={"menuitem"}
                 ref={linkRefs[i]}
                 tabIndex={-1}
-                onKeyUp={e => onKeyUp(e, i)}
+                onKeyDown={e => onKeyDown(e, i)}
                 onBlur={onBlur}
                 href={href}
             >
