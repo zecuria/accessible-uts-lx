@@ -1,0 +1,93 @@
+.slide > div {
+    min-height: 600px;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.slide .text {
+    position: relative;
+    display: inline-block;
+    max-width: 650px;
+    padding: 40px;
+    background: #0f4beb;
+    color: white;
+}
+
+.slide .tag {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.slide h2 {
+    font-weight: 300;
+    margin: 0 0 10px;
+}
+
+.slide .address {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    vertical-align: top;
+    color: #fff;
+    background: #000;
+}
+
+.slide {
+    width: 1320px;
+    position: absolute;
+    top: 0;
+    transition: left .6s ease-out
+}
+
+.slide.in-transition {
+    visibility: visible !important;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.arrow { 
+    z-index: 1;
+    position: absolute;
+    bottom: 40px;
+    height: 66px;
+    width: 66px;
+    background: #000;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    appearance: none;
+}
+
+.arrow.arrow-right {
+    transform: rotate(-180deg);
+    right: 50px;
+}
+
+.arrow.arrow-left {
+    right: 120px;
+}
+
+.arrow:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 66px;
+    height: 66px;
+    content: '';
+    transform: rotate(90deg);
+    background: url('data:image/svg+xml;charset=utf8,%3Csvg width%3D\'16\' height%3D\'9\' viewBox%3D\'0 0 16 9\' xmlns%3D\'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\'%3E%3Cpath d%3D\'M15.951 1.109L8.104 8.956a.15.15 0 0 1-.213 0L.044 1.109a.15.15 0 0 1 0-.213L.896.044a.15.15 0 0 1 .213 0L7.89 6.827a.15.15 0 0 0 .213 0L14.886.044a.15.15 0 0 1 .213 0l.852.852a.15.15 0 0 1 0 .213\' fill%3D\'%23FFF\' fill-rule%3D\'evenodd\'%2F%3E%3C%2Fsvg%3E') no-repeat center/16px 9px;
+    background-size: 24px;
+}

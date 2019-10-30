@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import keyCode from './Keycodes';
 
 const focusLink = (linksRef, i) => {
@@ -19,8 +19,8 @@ const focusLink = (linksRef, i) => {
     linksRef[index].current.focus();
 }
 
-let linkRefs = []; 
 const initLinks = (items) => {
+    let linkRefs = []; 
     if(linkRefs.length === 0 || items.length !== linkRefs.length) {
         linkRefs = items.map(() => React.createRef());
     }
@@ -40,12 +40,14 @@ const MenuItem = (props) => {
     } = props;
 
     const [isOpen, toggleOpen] = useState(false);
+    const refs = useRef(subItems.map(() => React.createRef()))
+    const { current: linkRefs = [] } = refs;
 
     useEffect(() => {
         if (isOpen) {
             focusLink(linkRefs, focusedIndex);
         }
-    }, [isOpen])
+    }, [isOpen, linkRefs])
 
     initLinks(subItems);
 

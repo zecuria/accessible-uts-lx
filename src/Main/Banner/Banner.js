@@ -25,7 +25,7 @@ const Banner = () => {
             <Container>
                 <div className="banner-text">
                     <h1>LX at UTS</h1>
-                    <strong className="sub-heading">Learner experiance at UTS</strong>
+                    <strong className="sub-heading">Learner experience at UTS</strong>
                 </div>
                 <PlayButton isPaused={isPaused} onClick={() => pauseVideo(!isPaused)} />
             </Container>

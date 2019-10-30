@@ -1,0 +1,20 @@
+.intro-block {
+    position: relative;
+    margin-top: -100px;
+}
+
+.intro-block .intro-block-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.intro-block .intro-text-wrap {
+    background: #b2b2b2;
+    padding: 40px 50px;
+    width: 100%;
+}
+
+.intro-block .intro-text-wrap h2 {
+    font-weight: 300;
+}
