@@ -106,7 +106,6 @@ const MenuItem = (props) => {
         
     };
 
-    const className = isOpen ? 'has-menu' : '';
 
     const onBlur = (e) => {
         const isInMenu = linkRefs.some(({ current }) => current === e.relatedTarget);
@@ -115,8 +114,33 @@ const MenuItem = (props) => {
         } 
     }
 
+    const [isEntered, setEntered] = useState(false);
+    const timeout = useRef(null);
+
+    const clearCurrentTimeout = () => {
+        if (timeout.current) { 
+            clearTimeout(timeout.current);
+        }
+    }
+
+    const onMouseEnter = () => {
+        clearCurrentTimeout();
+        setEntered(true);
+    }
+
+    const onMouseLeave = () => {
+        clearCurrentTimeout();
+        timeout.current = setTimeout(() => setEntered(false), 1000)
+    }
+
+    const className = isOpen || isEntered ? 'has-menu' : '';
+
     return (
-        <li role="none">
+        <li
+            role="none"
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+        >
             <a
                 href={href}
                 onKeyDown={(e) => onKeyDown(e, linkRefs.length)}

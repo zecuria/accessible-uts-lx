@@ -40,7 +40,7 @@
 
 a:focus,
 button:focus {
-  outline: 3px solid orange;
+  outline: 3px solid cyan;
 }
 
 button:hover {

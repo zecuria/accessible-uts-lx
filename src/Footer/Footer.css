@@ -1,0 +1,78 @@
+#footer {
+    padding: 60px 0;
+    color: #fff;
+    background: #000;
+}
+
+#footer .row {
+    display: flex;
+}
+
+#footer .footer-menu ul li {
+    margin-bottom: 8px;
+}
+
+#footer .footer-menu ul li a {
+    display: inline-block;
+    padding-bottom: 2px;
+    vertical-align: top;
+    border-bottom: 1px solid transparent;
+}
+
+#footer .col {
+    float: left;
+    width: 33.33%;
+    padding: 0 15px;
+}
+
+#footer ul li a {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#footer .footer-account ul li a {
+    display: inline-block;
+    padding-bottom: 2px;
+    vertical-align: top;
+    border-bottom: 1px solid transparent;
+}
+
+#footer .title {
+    font-weight: 300;
+    display: block;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+#footer .social-networks ul li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#footer .social-networks ul li a.facebook {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg width%3D\'20\' height%3D\'19\' viewBox%3D\'0 0 20 19\' xmlns%3D\'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\'%3E%3Cpath d%3D\'M19 0H1.06C.464.01-.01.478 0 1.045v16.91c-.01.566.463 1.035 1.06 1.045h9.78v-7.125H8.32V9.5h2.52V7.742c0-2.45 1.45-3.8 3.66-3.8.457-.023.915.015 1.36.114v2.271h-1.13c-.656-.123-1.292.283-1.42.906-.035.163-.03.33.01.49V9.5h2.54l-.37 2.394h-2.17V19H19c.573-.04 1.012-.499 1-1.045V1.045C20.012.5 19.573.04 19 0\' fill%3D\'%23FFF\' fill-rule%3D\'evenodd\'%2F%3E%3C%2Fsvg%3E');
+}
+
+#footer .social-networks ul li a.linkedin {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg width%3D\'20\' height%3D\'20\' viewBox%3D\'0 0 20 20\' xmlns%3D\'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\'%3E%3Cpath d%3D\'M17 17.001h-3v-4.6c0-1.11 0-2.53-1.54-2.53s-1.78 1.21-1.78 2.45v4.68h-3v-9.5h2.85v1.3a3.118 3.118 0 0 1 2.81-1.54c3 0 3.56 2 3.56 4.55v5.19h.1zM4.45 6.191a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44zm1.48 10.81H3v-9.5h3v9.5h-.07zm12.59-17h-17A1.46 1.46 0 0 0 .001 1.4L0 1.441v17.12a1.46 1.46 0 0 0 1.479 1.44H18.48a1.46 1.46 0 0 0 1.519-1.398l.001-.042V1.441a1.46 1.46 0 0 0-1.479-1.44h-.001z\' fill%3D\'%23FFF\' fill-rule%3D\'evenodd\'%2F%3E%3C%2Fsvg%3E');
+}
+
+#footer .social-networks ul li a.twitter {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg width%3D\'20\' height%3D\'16\' viewBox%3D\'0 0 20 16\' xmlns%3D\'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\'%3E%3Cpath d%3D\'M20 1.87a8.303 8.303 0 0 1-2.36.64A4.058 4.058 0 0 0 19.45.28a8.27 8.27 0 0 1-2.61 1 4.13 4.13 0 0 0-3-1.28 4.07 4.07 0 0 0-4.1 4c-.004.33.033.66.11.98A11.71 11.71 0 0 1 1.39.72a3.994 3.994 0 0 0-.56 2 3.999 3.999 0 0 0 1.83 3.39 4.144 4.144 0 0 1-1.86-.5v.05a4.06 4.06 0 0 0 3.29 4 4.174 4.174 0 0 1-1.85.07 4.1 4.1 0 0 0 3.83 2.81A8.318 8.318 0 0 1 1 14.22a8.574 8.574 0 0 1-1-.06 11.75 11.75 0 0 0 6.29 1.82c6.351.116 11.592-4.938 11.708-11.288L18 4.49v-.51a8.277 8.277 0 0 0 2-2.11\' fill%3D\'%23FFF\' fill-rule%3D\'evenodd\'%2F%3E%3C%2Fsvg%3E');
+}
+
+#footer .social-networks ul li a.instagram {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg width%3D\'20\' height%3D\'20\' viewBox%3D\'0 0 20 20\' xmlns%3D\'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\'%3E%3Cg fill%3D\'%23FFF\' fill-rule%3D\'evenodd\'%3E%3Cpath d%3D\'M10 0C7.28 0 6.94 0 5.88.06c-.83.015-1.652.17-2.43.46a4.898 4.898 0 0 0-1.77 1.16A4.898 4.898 0 0 0 .52 3.45c-.29.778-.445 1.6-.46 2.43C0 6.94 0 7.28 0 10s0 3.06.06 4.12c.015.83.17 1.651.46 2.43.25.667.643 1.27 1.15 1.77.499.507 1.103.9 1.77 1.15.778.29 1.6.445 2.43.46C6.94 20 7.28 20 10 20c2.72 0 3.06 0 4.12-.06a7.342 7.342 0 0 0 2.43-.46 5.11 5.11 0 0 0 2.92-2.92c.29-.778.445-1.6.46-2.43.07-1.07.07-1.41.07-4.13 0-2.72 0-3.06-.06-4.12a7.337 7.337 0 0 0-.46-2.43 4.925 4.925 0 0 0-1.15-1.77A4.902 4.902 0 0 0 16.55.52a7.342 7.342 0 0 0-2.43-.46C13.06 0 12.72 0 10 0m0 1.8c2.67 0 3 0 4 .06a5.544 5.544 0 0 1 1.86.34c.436.177.826.45 1.14.8.345.303.618.679.8 1.1.223.608.339 1.252.34 1.9 0 1.05.06 1.37.06 4s0 3-.06 4a5.52 5.52 0 0 1-.34 1.86 3.311 3.311 0 0 1-1.9 1.9 5.544 5.544 0 0 1-1.86.34c-1.05 0-1.37.06-4 .06s-3 0-4-.06a5.542 5.542 0 0 1-1.94-.3A3.102 3.102 0 0 1 3 17a3.102 3.102 0 0 1-.8-1.1 5.552 5.552 0 0 1-.34-1.9c0-1.05-.06-1.37-.06-4s0-3 .06-4a5.524 5.524 0 0 1 .34-1.9c.182-.421.455-.797.8-1.1a3.102 3.102 0 0 1 1.1-.8A5.524 5.524 0 0 1 6 1.86c1-.05 1.33-.06 4-.06\'%2F%3E%3Cpath d%3D\'M10 13.33a3.33 3.33 0 1 1 0-6.66 3.33 3.33 0 0 1 0 6.66m0-8.47a5.14 5.14 0 1 0 0 10.28 5.14 5.14 0 0 0 0-10.28m6.54-.2a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0\'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+#footer .social-networks ul li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+#footer .social-networks ul li + li {
+    margin-left: 20px;
+}
