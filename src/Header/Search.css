@@ -50,7 +50,7 @@
 }
 
 .search-close:focus {
-    outline: 2px solid #ffffff;
+    /* outline: 2px solid #ffffff; */
 }
 
 .search-close::after {

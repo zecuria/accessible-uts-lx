@@ -41,7 +41,7 @@ const Slider = props => {
                         }}>
                             <div style={{ backgroundImage: `url("${item.img}"`}}>
                                 <div className="text">
-                                    {renderItem(item)}
+                                    {renderItem(item, prevFocusedIndex === i)}
                                 </div>
                             </div>
                         </li>

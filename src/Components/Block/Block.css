@@ -1,0 +1,49 @@
+.row {
+    box-sizing: border-box;
+}
+
+.subscribe-contribute-block .row {
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.subscribe-contribute-block .col {
+    display: flex;
+    width: 33.333333%;
+    min-height: 417px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.bg-light-gray {
+    background: #ebebeb;
+}
+
+.col-wrap.color-black {
+    height: unset;
+    width: 100%;
+}
+
+.subscribe-contribute-block .col-wrap {
+    padding: 70px 50px;
+}
+
+.container h3 {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+h3, p { 
+    margin: 0 0 1.5em;
+}
+
+.btn.btn-primary {
+    background: #0f4beb
+}
