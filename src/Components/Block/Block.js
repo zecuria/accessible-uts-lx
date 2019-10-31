@@ -2,9 +2,9 @@ import React from 'react';
 import Container from '../../Components/Container/Container';
 import './Block.css';
 
-const Block = ({ items, className="" }) => {
+const Block = ({ items, className="", id }) => {
     return (
-        <section className={"subscribe-contribute-block " + className }>
+        <section className={"subscribe-contribute-block " + className } id={id}>
             <Container>
                 <div className="row">
                     {items.map(({ className='', headingClass, backgroundImage, heading, body, child, href, label }, i) => (

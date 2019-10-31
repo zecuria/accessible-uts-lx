@@ -3,7 +3,7 @@ import './Resources.css';
 import Container from '../../Components/Container/Container';
 
 const Resources = () => (
-    <section className="image-block">
+    <section className="image-block" id="resources">
         <Container>
             <div className="image-wrap" style={{
                 backgroundImage: 'url(https://s3-ap-southeast-2.amazonaws.com/wordpress-futures-prod/wp-content/uploads/2019/10/16092731/19-011_FuturesBanner_static-06.png)'

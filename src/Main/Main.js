@@ -11,11 +11,14 @@ import Resources from './Resources/Resources';
 import ThirdBlock from './ThirdBlock/ThirdBlock';
 import LxLab from './LxLab/LxLab';
 import FourthBlock from './FourthBlock/FourthBlock';
+import Aside from '../Aside/Aside';
 
 const Main = () => {
     return (
+        <>
+        <Banner />
+        <Aside />
         <main role="main" id="main">
-            <Banner />
             <Intro />
             <FeaturedSlider />
             <FirstBlock />
@@ -27,6 +30,7 @@ const Main = () => {
             <LxLab />
             <FourthBlock />
         </main>
+        </>
     );
 };
 

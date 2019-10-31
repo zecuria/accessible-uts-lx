@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../../Components/Container/Container';
 
 const LxLab = () => (
-    <section className="image-block">
+    <section className="image-block" id="lxlab">
         <Container>
             <div className="image-wrap" style={{
                 backgroundImage: 'url(https://s3-ap-southeast-2.amazonaws.com/wordpress-futures-prod/wp-content/uploads/2019/08/24101739/19-011_FuturesBanner_static-02_LXlab.png)'

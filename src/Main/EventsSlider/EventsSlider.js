@@ -23,7 +23,7 @@ const items = [
 
 const EventsSlider = () => {
     return (
-        <section aria-labelledby="carouselheading1" className="events-slider">
+        <section aria-labelledby="carouselheading1" className="events-slider" id="events">
             <h2 id="carouselheading1" className="sr-only">Events</h2>
             <Slider
                 items={items}

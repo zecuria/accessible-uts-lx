@@ -1,0 +1,33 @@
+aside {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 0;
+    margin-top: -70px;
+    z-index: 1;
+}
+
+aside ul {
+    width: calc(50vw - 1336px / 2);
+}
+aside li {
+    width: calc(50vw - 1336px / 2);
+    z-index: 99;
+}
+
+aside li a {
+    position: relative;
+    display: block;
+    height: 56px;
+    padding: 15px 20px;
+    text-align: right;
+    color: #fff;
+    background: #000;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+aside li + li {
+    margin-top: 3px;
+}

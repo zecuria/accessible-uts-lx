@@ -1,6 +1,6 @@
 .header-top {
-    z-index: 1;
-    position: fixed;
+    z-index: 2;
+    /* position: fixed; */
     top: 0;
     right: 0;
     left: 0;
@@ -58,6 +58,6 @@ img {
 }
 
 .header-bottom {
-    padding-top: 100px;
+    /* padding-top: 100px; */
     background: #000000;
 }

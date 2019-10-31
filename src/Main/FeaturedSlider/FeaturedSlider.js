@@ -36,7 +36,7 @@ const items = [
 
 const FeaturedSlider = () => {
     return (
-        <section aria-labelledby="carouselheading1">
+        <section aria-labelledby="carouselheading1" id="futures">
             <h2 id="carouselheading1" className="sr-only">Featured articles</h2>
             <Slider
                 items={items}

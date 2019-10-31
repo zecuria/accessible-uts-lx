@@ -16,7 +16,7 @@ const Banner = () => {
     }, [isPaused])
 
     return (
-        <section className="banner video-banner">
+        <section className="banner video-banner" aria-label="Page banner">
             <div className="video-wrap">
                 <video ref={videoRef} id="myVideo" autoPlay={true} muted={true} loop={true}>
                     <source src="https://s3-ap-southeast-2.amazonaws.com/wordpress-futures-prod/wp-content/uploads/2019/07/24101730/18-011_FuturesSite_HomePageBanner_FA.mp4" type="video/mp4" />
