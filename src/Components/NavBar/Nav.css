@@ -8,8 +8,8 @@ nav .drop-wrap > ul {
     vertical-align: middle;
 }
 
-/* .drop-wrap > ul li:focus-within ul, */
 .drop-wrap > ul li:hover ul,
+.drop-wrap > ul li ul:hover,
 .drop-wrap > ul ul.has-menu {
     display: block;
 }

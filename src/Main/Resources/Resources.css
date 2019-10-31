@@ -1,0 +1,43 @@
+.img-wrap {
+    height: 350px;
+}
+
+.image-block .image-wrap {
+    padding: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image-block .text-wrap {
+    height: 300px;
+    min-height: 300px;
+    text-align: center;
+}
+
+.color-white {
+    color: white;
+
+}
+
+.image-block .text {
+    display: inline-block;
+    margin-top: 114px;
+    text-align: right;
+    vertical-align: middle;
+    white-space: normal;
+}
+
+.image-block h2 {
+    font-size: 130px;
+    margin: 0 0 10px;
+    padding-right: 140px;
+    font-weight: 300;
+}
+
+.image-block p {
+    font-size: 24px;
+    font-weight: 600;
+    display: block;
+    text-align: right;
+}

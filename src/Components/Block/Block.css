@@ -23,6 +23,10 @@
     background: #ebebeb;
 }
 
+.bg-white {
+    background: #ffffff;
+}
+
 .col-wrap.color-black {
     height: unset;
     width: 100%;

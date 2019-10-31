@@ -6,6 +6,11 @@ import FeaturedSlider from './FeaturedSlider/FeaturedSlider';
 import FirstBlock from './FirstBlock/FirstBlock';
 import Twitter from './Twitter/Twitter';
 import EventsSlider from './EventsSlider/EventsSlider';
+import SecondBlock from './SecondBlock/SecondBlock';
+import Resources from './Resources/Resources';
+import ThirdBlock from './ThirdBlock/ThirdBlock';
+import LxLab from './LxLab/LxLab';
+import FourthBlock from './FourthBlock/FourthBlock';
 
 const Main = () => {
     return (
@@ -16,6 +21,11 @@ const Main = () => {
             <FirstBlock />
             <Twitter />
             <EventsSlider />
+            <SecondBlock />
+            <Resources />
+            <ThirdBlock />
+            <LxLab />
+            <FourthBlock />
         </main>
     );
 };
