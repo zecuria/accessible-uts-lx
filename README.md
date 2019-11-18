@@ -2,7 +2,7 @@ This is an assignment for the Professional Certification in Web Accessibility.
 
 The assignment was to create a version of a chosen website, audit it and update the website to meet a level A compliance.
 
-The website chosen was: [https://web.archive.org/web/20191017201331/https://lx.uts.edu.au/](https://lx.uts.edu.au)
+The website chosen was: [https://lx.uts.edu.au/](https://web.archive.org/web/20191017201331/https://lx.uts.edu.au/)
 
 The updated website is: https://accessible-lx.shahid.com.au
 
